@@ -1,223 +1,240 @@
 header {
-    /*Flex en el contenedor padre*/
-    display: flex;
-    position: relative;
-    justify-content: space-around;
+  /*Flex en el contenedor padre*/
+  display: flex;
+  position: relative;
+  justify-content: space-between;
 
 
-    background-color: yellow;
-    padding: 3px color black;
 
-    position: sticky;
-    top: 0;
+  background-color: yellow;
+  padding: 3px color black;
 
-    height: 120px;
-    width: auto;
+  position: sticky;
+  top: 0;
 
-    margin: 5px color black;
-    border: black 30px;
+  height: 120px;
+  width: auto;
 
-    color: black;
+  margin: 5px color black;
+  border: black 30px;
+
+  color: black;
+
+
 
 }
 
 
 .padreFlex {
-    background-color: cadetblue;
-    align-items: center;
-    
-    border: solid black 3px;
-    border-radius: 6px;
-    flex-direction: row;
-    align-items: center;
-    bottom: auto;
-    bottom: 10px;
-    align-items: center;
-    
+  background-color: cadetblue;
+  align-items: center;
+
+  border: solid black 3px;
+  border-radius: 6px;
+  flex-direction: row;
+  align-items: center;
+  bottom: auto;
+  bottom: 10px;
+  align-items: center;
+
 }
 
 #formulario {
 
-    color: white;
-    border-radius: 3px black;
-    border: 3px black;
-    bottom: 3000px;
-    left: 20px;
-    padding: 10px; 
-   background-color: gray
-   
-
+  color: white;
+  border-radius: 3px black;
+  border: 3px black;
+  bottom: 3000px;
+  left: 20px;
+  padding: 10px;
+  background-color: gray
 }
 
 
 .hijoFlex {
-    background-color: rgb(234, 234, 24);
-    height: 300px;
-    width: 500px;
-    border: 1px dotted black;
-    border-radius: 4px;
-    max-width: 100%;
-     max-height: 100%;
-    
+  background-color: rgb(234, 234, 24);
+  height: 300px;
+  width: 500px;
+  border: 1px dotted black;
+  border-radius: 4px;
+  max-width: 100%;
+  max-height: 100%;
+
 }
 
 
-.contact_form{	
-	width: 460px; 
+.contact_form {
+  width: 460px;
   height: auto;
   margin: 80px auto;
-	border-radius: 10px;  
-	padding-top: 30px;
-	padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #fbfbfb;
+  padding-left: 30px;
 }
 
 
-input{
-	background-color: #fbfbfb; 
-	width: 408px; 
-	height: 40px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: gray; 
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 20px; 
+input {
+  background-color: #fbfbfb;
+  width: 408px;
+  height: 40px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
 }
 
 
-textarea{
-  background-color: #fbfbfb; 
-	width: 405px; 
-	height: 150px; 
-	border-radius: 5px;  
-	border-style: solid; 
-	border-width: 1px; 
-	border-color: gray; 
-	margin-top: 10px;  
-	padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
+textarea {
+  background-color: #fbfbfb;
+  width: 405px;
+  height: 150px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  padding-top: 15px;
 }
 
 
-label{
-  display: block; 
-	float: center; 	
-    color: #0e0e0e;
+label {
+  display: block;
+  float: center;
+  color: #0e0e0e;
 }
 
 
-button{
-	height: 45px; 
-	padding-left: 5px;
-	padding-right: 5px; 	
-	margin-bottom: 20px; 
-	margin-top: 10px; 	
-	text-transform: uppercase;
-	background-color: yellow; 
-	border-color: black; 
-	border-style: solid; 
-	border-radius: 10px;	
-	width: 420px;   
+button {
+  height: 45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  background-color: yellow;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  width: 420px;
   cursor: pointer;
 }
 
 
-button p{
-	color: #fff; 
+button p {
+  color: #fff;
 }
 
 
-span{
-	color: gray; 
+span {
+  color: gray;
 }
 
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: azure;
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: azure;
 }
 
 
 .main {
-    font-size: large 80px;
+  font-size: large 80px;
 
 }
 
-.img{
+.img {
 
-width: auto;
-height: auto;
-max-height: 100px;
-max-width: 100px;
+  width: auto;
+  height: auto;
+  max-height: 100px;
+  max-width: 100px;
 }
 
-h1{
-	font-size: 39px;  
-	text-align: letf; 
-	padding-bottom: 20px; 
-	color: black;
+h1 {
+  font-size: 39px;
+  text-align: letf;
+  padding-bottom: 20px;
+  color: black;
 }
 
 
-h3{
-	font-size: 16px; 
-	padding-bottom: 30px;
-	color: #0e0e0e;   
+h3 {
+  font-size: 16px;
+  padding-bottom: 30px;
+  color: #0e0e0e;
 }
 
 .h1 {
-    color: black;
+  color: black;
 
 }
 
 
 .footer {
-    position: absolute;
-    width: 1000px;
-    background-color: black;
-    color: gray;
-    padding: 10px;
+  position: absolute;
+  width: 1000px;
+  background-color: black;
+  color: gray;
+  padding: 10px;
 }
 
 .imagen-adaptada {
-    max-width: 100%;
-       
-    max-height: 100%;
+  max-width: 100%;
+
+  max-height: 100%;
 
 }
 
 #noticias {
-    background-color: lightblue;
-    border: 30px;
-    color: black;
-    position: relative;
+  background-color: lightblue;
+  border: 30px;
+  color: black;
+  position: relative;
 
 }
 
 
 .gridPadre {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas con igual anchura */
+  grid-template-columns: repeat(3, 1fr);
+  /* Tres columnas con igual anchura */
 
-  @media (max-width: 600px) 
-  {
-    grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    /* Cambia a una sola columna en dispositivos móviles */
 
 
-   .logo {
-    display: none;
+    .logo {
 
-   }
- }
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
+
+
+    }
+  }
 }
 
 nav {
-  grid-column: 2 / 3; /* Ocupa la segunda columna */
-      text-align: center;
+  text-align: center;
 }
 
+.h1 {
+  height: 48;
+  width: 175;
+}
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
+}
