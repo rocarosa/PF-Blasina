@@ -238,3 +238,19 @@ img {
   height: 100%;
   object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
 }
+
+.text-over-image {
+  padding: 10px; /* Ajusta el espacio alrededor del texto según sea necesario */
+  text-align: center;
+  color: white; /* Color del texto */
+}
+
+.background-image {
+  background-image: url('ruta-de-tu-imagen.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 300px; /* Altura de la sección, ajusta según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
