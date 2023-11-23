@@ -1,256 +1,181 @@
+/* Estilos para el header */
 header {
-  /*Flex en el contenedor padre*/
   display: flex;
-  position: relative;
   justify-content: space-between;
-
-
-
-  background-color: yellow;
-  padding: 3px color black;
-
+  align-items: center;
   position: sticky;
   top: 0;
-
   height: 120px;
-  width: auto;
-
-  margin: 5px color black;
-  border: black 30px;
-
+  width: 100%;
+  background-color: yellow;
+  padding: 10px;
+  border: 5px solid black;
   color: black;
-
-
-
 }
 
-
+/* Estilos para el contenedor padre del flex */
 .padreFlex {
   background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-
-  border: solid black 3px;
+  border: 3px solid black;
   border-radius: 6px;
-  flex-direction: row;
-  align-items: center;
-  bottom: auto;
-  bottom: 10px;
-  align-items: center;
-
-}
-
-#formulario {
-
-  color: white;
-  border-radius: 3px black;
-  border: 3px black;
-  bottom: 3000px;
-  left: 20px;
+  margin-bottom: 10px;
   padding: 10px;
-  background-color: gray
 }
 
+/* Estilos para el formulario */
+#formulario {
+  color: white;
+  border-radius: 5px;
+  border: 3px solid black;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: gray;
+}
 
+/* Estilos para el hijo del flex */
 .hijoFlex {
   background-color: rgb(234, 234, 24);
   height: 300px;
   width: 500px;
-  border: 1px dotted black;
+  border: 2px dotted black;
   border-radius: 4px;
   max-width: 100%;
   max-height: 100%;
-
+  margin-bottom: 20px;
 }
 
-
+/* Estilos para el formulario de contacto */
 .contact_form {
-  width: 460px;
-  height: auto;
+  width: 100%;
+  max-width: 500px;
   margin: 80px auto;
   border-radius: 10px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding: 20px;
   background-color: #fbfbfb;
-  padding-left: 30px;
 }
 
-
-input {
-  background-color: #fbfbfb;
-  width: 408px;
+/* Estilos para los inputs y textarea del formulario */
+input,
+textarea {
+  width: 100%;
   height: 40px;
   border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
+  border: 1px solid gray;
   margin-top: 10px;
-  padding-left: 10px;
   margin-bottom: 20px;
+  padding: 5px;
 }
 
-
-textarea {
-  background-color: #fbfbfb;
-  width: 405px;
-  height: 150px;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: gray;
-  margin-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
-}
-
-
+/* Estilos para las etiquetas del formulario */
 label {
   display: block;
-  float: center;
   color: #0e0e0e;
+  margin-bottom: 5px;
 }
 
-
+/* Estilos para el botón del formulario */
 button {
   height: 45px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
   text-transform: uppercase;
   background-color: yellow;
-  border-color: black;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100%;
   cursor: pointer;
 }
 
-
 button p {
   color: #fff;
+  margin: 0;
 }
 
-
-span {
+/* Estilos para el pie de página */
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: black;
   color: gray;
+  padding: 10px;
 }
 
+/* Estilos para la sección de noticias */
+#noticias {
+  background-color: lightblue;
+  border: 5px solid black;
+  color: black;
+  padding: 20px;
+}
 
+/* Estilos para el contenedor grid */
+.gridPadre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Estilos para la navegación */
+nav {
+  text-align: center;
+}
+
+/* Estilos para las imágenes */
+.img,
+.logo,
+.imagen-adaptada,
+.background-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para el texto sobre la imagen */
+.text-over-image {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Estilos para el cuerpo del documento */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: black;
   color: azure;
 }
 
-
+/* Estilos para la sección principal */
 .main {
-  font-size: large 80px;
-
+  font-size: 80px;
 }
 
-.img {
-
-  width: auto;
-  height: auto;
-  max-height: 100px;
-  max-width: 100px;
-}
-
+/* Estilos para el encabezado h1 */
 h1 {
   font-size: 39px;
-  text-align: letf;
+  text-align: left;
   padding-bottom: 20px;
   color: black;
 }
 
-
+/* Estilos para el encabezado h3 */
 h3 {
   font-size: 16px;
   padding-bottom: 30px;
   color: #0e0e0e;
 }
 
-.h1 {
-  color: black;
-
-}
-
-
-.footer {
-  position: absolute;
-  width: 1000px;
-  background-color: black;
-  color: gray;
-  padding: 10px;
-}
-
-.imagen-adaptada {
-  max-width: 100%;
-
-  max-height: 100%;
-
-}
-
-#noticias {
-  background-color: lightblue;
-  border: 30px;
-  color: black;
-  position: relative;
-
-}
-
-
-.gridPadre {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* Tres columnas con igual anchura */
-
-  @media (max-width: 600px) {
-    grid-template-columns: 1fr;
-    /* Cambia a una sola columna en dispositivos móviles */
-
-
-    .logo {
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
-
-
-    }
-  }
-}
-
-nav {
-  text-align: center;
-}
-
-.h1 {
-  height: 48;
-  width: 175;
-}
-
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Hace que la imagen cubra todo el contenedor sin distorsionarse */
-}
-
-.text-over-image {
-  padding: 10px; /* Ajusta el espacio alrededor del texto según sea necesario */
-  text-align: center;
-  color: white; /* Color del texto */
-}
-
-.background-image {
-  background-image: url('ruta-de-tu-imagen.jpg');
-  background-size: cover;
-  background-position: center center;
-  height: 300px; /* Altura de la sección, ajusta según sea necesario */
+header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 120px; /* Ajusta el alto según sea necesario */
+  width: 100%;
+  background-color: yellow;
+  padding: 10px;
+  border: 5px solid black;
+  color: black;
 }
