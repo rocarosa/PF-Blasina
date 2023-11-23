@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <!-- CSS -->
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../estilo.css">
 
+
+
 </head>
 
 <body>
-    <header class="mb-4">
-        <div>
-            <h1 class="display-3">Los Simpsons</h1>
-        </div>
-
-
+    <header>
+        <h1 class="display-3">Los Simpsons</h1>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
@@ -30,197 +28,71 @@
                 <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
             </ul>
         </nav>
-        </div>
     </header>
-    
 
     <main>
         <section id="articulos" class="row">
             <div class="col-lg-4 mb-4">
                 <div class="hijoFlex">
-                    <img src="/img/descarga.png" alt="Artículo 1">
-                    <h2>LEGO Simpsons 71006 La casa de los Simpson</h2>
-                    <p>
-                        Disponibilidad: En stock
-
-                        Marca: Lego
-
-                        Peso con empaque: 3.169 kg
-
-                        Producto con devolución
-
-                        Producto de: Amazon
-                    </p>
-
+                    <img src="../img/lego 2.jpg" alt="Artículo 1">
+                    <h3>Itachy And Scratchy</h2>
+                    <p>$70 USD</p>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
             </div>
 
             <div class="col-lg-4 mb-4">
                 <div class="hijoFlex">
-                    <img src="/img/descarga.png" alt="Artículo 1">
-                    <h2>LEGO Simpsons 71006 La casa de los Simpson</h2>
-                    <p>
-                        Disponibilidad: En stock
-
-                        Marca: Lego
-
-                        Peso con empaque: 3.169 kg
-
-                        Producto con devolución
-
-                        Producto de: Amazon
-                    </p>
-
+                    <img src="../img/lego 2.jpg" alt="Artículo 2">
+                    <h2>LEGO los Simpson</h2>
+                    <p>$299 USD</p>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
             </div>
 
             <div class="col-lg-4 mb-4">
                 <div class="hijoFlex">
-                    <img src="/img/descarga.png" alt="Artículo 1">
-                    <h2>LEGO Simpsons 71006 La casa de los Simpson</h2>
-                    <p>
-                        Disponibilidad: En stock
-
-                        Marca: Lego
-
-                        Peso con empaque: 3.169 kg
-
-                        Producto con devolución
-
-                        Producto de: Amazon
-                    </p>
-
+                    <img src="../img/lego 2.jpg" alt="Artículo 3">
+                    <h2>Homer Radioactivo</h2>
+                    <p>$200 USD</p>
                     <button class="btn btn-primary">Comprar</button>
                 </div>
             </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="hijoFlex">
-                    <img src="/img/descarga.png" alt="Artículo 1">
-                    <h2>LEGO Simpsons 71006 La casa de los Simpson</h2>
-                    <p>
-                        Disponibilidad: En stock
-
-                        Marca: Lego
-
-                        Peso con empaque: 3.169 kg
-
-                        Producto con devolución
-
-                        Producto de: Amazon
-                    </p>
-
-                    <button class="btn btn-primary">Comprar</button>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="hijoFlex">
-                    <img src="/img/descarga.png" alt="Artículo 1">
-                    <h2>LEGO Simpsons 71006 La casa de los Simpson</h2>
-                    <p>
-                        Disponibilidad: En stock
-
-                        Marca: Lego
-
-                        Peso con empaque: 3.169 kg
-
-                        Producto con devolución
-
-                        Producto de: Amazon
-                    </p>
-
-                    <button class="btn btn-primary">Comprar</button>
-                </div>
-            </div>
-
-
-
+        </section>
 
         <form>
             <div class="contact_form">
-
+                <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
                 <div class="formulario">
-                    <h1>Formulario de contacto</h1>
-                    <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+                    <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+                    <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
 
+                    <label for="email">Email <span class="obligatorio">*</span></label>
+                    <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
 
-                    <form action="submeter-formulario.php" method="post">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
 
+                    <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
+                    <textarea name="introducir_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
 
-                        <p>
-                            <label for="nombre" class="colocar_nombre">Nombre
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
-                                placeholder="Escribe tu nombre">
-                        </p>
+                    <button type="submit" name="enviar_formulario" id="enviar" class="btn btn-primary">Enviar</button>
 
-                        <p>
-                            <label for="email" class="colocar_email">Email
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <input type="email" name="introducir_email" id="email" required="obligatorio"
-                                placeholder="Escribe tu Email">
-                        </p>
-
-                        <p>
-                            <label for="telefone" class="colocar_telefono">Teléfono
-                            </label>
-                            <input type="tel" name="introducir_telefono" id="telefono"
-                                placeholder="Escribe tu teléfono">
-                        </p>
-
-                        <p>
-                            <label for="website" class="colocar_website">Sitio web
-                            </label>
-                            <input type="url" name="introducir_website" id="website"
-                                placeholder="Escribe la URL de tu web">
-                        </p>
-
-                        <p>
-                            <label for="asunto" class="colocar_asunto">Asunto
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
-                                placeholder="Escribe un asunto">
-                        </p>
-
-                        <p>
-                            <label for="mensaje" class="colocar_mensaje">Mensaje
-                                <span class="obligatorio">*</span>
-                            </label>
-                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje"
-                                required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
-                        </p>
-
-                        <button type="submit" name="enviar_formulario" id="enviar">
-                            <p>Enviar</p>
-                        </button>
-
-                        <p class="aviso">
-                            <span class="obligatorio"> * </span>los campos son obligatorios.
-                        </p>
-
-                    </form>
+                    <p class="aviso">
+                        <span class="obligatorio">*</span> Los campos son obligatorios.
+                    </p>
                 </div>
             </div>
-
-
-
-
-
-            <footer class="footer1">
-                <p> 2023 - Fans de Los Simpsons - Sin derechos </p>
-            </footer>
-
-
-
+        </form>
     </main>
 
+    <footer class="footer1">
+        <p>2023 - Fans de Los Simpsons - Sin derechos</p>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
