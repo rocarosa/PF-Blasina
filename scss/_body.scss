@@ -1,0 +1,27 @@
+/* Estilos para el cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: azure;
+}
+
+/* Estilos para la sección principal */
+.main {
+    font-size: 80px;
+}
+
+
+
+/* Estilos para el contenedor padre del flex */
+
+.padreFlex {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
