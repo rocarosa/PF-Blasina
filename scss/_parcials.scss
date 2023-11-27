@@ -1,0 +1,44 @@
+$cliente: lala;
+
+@if ($cliente ==tikiwinki) {
+    body {
+        background-color:
+            #F1C40F
+    }
+}
+
+@else if (cliente==po) {
+    body {
+        background-color: pink;
+    }
+}
+
+@else if (cliente dipsi) {
+    body {
+        background-color: sienna;
+    }
+}
+
+@else if (cliente lala) {
+    body {
+        background-color: #FFD700;
+    }
+}
+
+//BUCLE FOR: ciclo por conteo
+@for $i from 1 to 4 {
+    h#{$i} {
+        font-size: $i * 2rem;
+    }
+
+
+}
+
+//LISTAS: variable que almacena valores
+$colores: "yellow", "black", "pink";
+
+@each $color in $colores {
+    .#{$color} {
+        color: #{$color};
+    }
+}

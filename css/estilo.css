@@ -1,4 +1,32 @@
 @charset "UTF-8";
+body {
+  background-color: sienna;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 6rem;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.black {
+  color: black;
+}
+
+.pink {
+  color: pink;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -7,18 +35,24 @@ header {
   top: 0;
   height: 120px;
   width: 100%;
-  background-color: yellow;
+  background-color: beige;
   padding: 10px;
-  border: 5px solid black;
+  border: 2px solid black;
   color: black;
 }
 
 /* Estilos para el encabezado h1 */
 h1 {
-  font-size: 39px;
-  text-align: left;
-  padding-bottom: 20px;
-  color: black;
+  font-family: "Bangers", cursive;
+  /* Utiliza una fuente similar a la del logo de Los Simpsons. Puedes buscar y agregar la fuente 'Bangers' a tu proyecto. */
+  color: #FFD700;
+  /* Amarillo dorado, que es un color característico de Los Simpsons. */
+  text-shadow: 2px 2px 4px #FF8C00;
+  /* Agrega un ligero efecto de sombra para resaltar el texto. */
+  letter-spacing: 2px;
+  /* Ajusta el espaciado entre letras para un aspecto más estilizado. */
+  text-transform: uppercase;
+  /* Convierte el texto a mayúsculas para un efecto adicional. */
 }
 
 /* Estilos para la navegación */
@@ -29,13 +63,20 @@ nav {
 /* Estilos para el cuerpo del documento */
 body {
   font-family: "Roboto", sans-serif;
-  background-color: black;
+  background-color: #1d1c1c;
   color: azure;
 }
 
 /* Estilos para la sección principal */
 .main {
   font-size: 80px;
+}
+.main h2 {
+  font-family: "Arial", sans-serif; /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+  color: #333; /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 24px; /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+  font-weight: bold; /* Puedes hacer que los subtítulos sean más audaces. */
+  margin-bottom: 10px; /* Agrega un poco de espacio en la parte inferior para separar los subtítulos del contenido siguiente. */
 }
 
 /* Estilos para el contenedor padre del flex */
@@ -48,6 +89,13 @@ body {
   border-radius: 6px;
   margin-bottom: 10px;
   padding: 10px;
+}
+
+/* Estilos para el contenedor grid */
+.gridPadre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 /* Estilos para las imágenes */
@@ -73,21 +121,55 @@ body {
   position: absolute;
   width: 100%;
   background-color: black;
-  color: gray;
-  padding: 10px;
+  padding: 5px;
 }
 
 /* Estilos para el encabezado h3 */
-h3 {
-  font-size: 16px;
+h2 {
+  font-size: 36px;
   padding-bottom: 30px;
-  color: #0e0e0e;
+  color: orange;
+  border-radius: 15px;
+}
+h2 button {
+  height: 45px;
+  text-transform: uppercase;
+  background-color: rgb(255, 217, 0);
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+h2 button p {
+  color: #fff;
+  margin: 0;
+}
+h2 button h4 {
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: black;
+  border-radius: 15px;
+}
+h2 button p {
+  font-size: 18px;
+}
+h2 button img {
+  border: 15px;
+  column-gap: normal;
+}
+
+.hijoFlex {
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  border: 50px;
 }
 
 /* Estilos para la sección de noticias */
 #noticias {
-  background-color: pink;
-  border: 5px solid black;
+  background-color: yellow;
+  border: 1px solid black;
   color: black;
   padding: 20px;
 }

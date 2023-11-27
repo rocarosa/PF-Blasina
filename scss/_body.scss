@@ -1,13 +1,20 @@
 /* Estilos para el cuerpo del documento */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: black;
+    background-color: #1d1c1c;
     color: azure;
 }
 
 /* Estilos para la sección principal */
 .main {
     font-size: 80px;
+    h2 {
+        font-family: 'Arial', sans-serif; /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+        color: #333; /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+        font-size: 24px; /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+        font-weight: bold; /* Puedes hacer que los subtítulos sean más audaces. */
+        margin-bottom: 10px; /* Agrega un poco de espacio en la parte inferior para separar los subtítulos del contenido siguiente. */
+      }
 }
 
 
@@ -23,5 +30,13 @@ body {
     border-radius: 6px;
     margin-bottom: 10px;
     padding: 10px;
-  }
-  
+}
+
+
+/* Estilos para el contenedor grid */
+
+.gridPadre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}

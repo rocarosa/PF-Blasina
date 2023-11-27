@@ -6,25 +6,33 @@ header {
     top: 0;
     height: 120px;
     width: 100%;
-    background-color: yellow;
+    background-color: beige;
     padding: 10px;
-    border: 5px solid black;
+    border: 2px solid black;
     color: black;
+
 }
 
 /* Estilos para el encabezado h1 */
 
 h1 {
-    font-size: 39px;
-    text-align: left;
-    padding-bottom: 20px;
-    color: black;
+
+    font-family: 'Bangers', cursive;
+    /* Utiliza una fuente similar a la del logo de Los Simpsons. Puedes buscar y agregar la fuente 'Bangers' a tu proyecto. */
+    color: #FFD700;
+    /* Amarillo dorado, que es un color característico de Los Simpsons. */
+    text-shadow: 2px 2px 4px #FF8C00;
+    /* Agrega un ligero efecto de sombra para resaltar el texto. */
+    letter-spacing: 2px;
+    /* Ajusta el espaciado entre letras para un aspecto más estilizado. */
+    text-transform: uppercase;
+    /* Convierte el texto a mayúsculas para un efecto adicional. */
+
 }
 
 
 /* Estilos para la navegación */
 nav {
     text-align: center;
-  
-  }
-  
+
+}
