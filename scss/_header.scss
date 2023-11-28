@@ -1,38 +1,59 @@
 header {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    position: sticky;
-    top: 0;
-    height: 120px;
-    width: 100%;
-    background-color: beige;
+    justify-content: center;
+    height: auto;
     padding: 10px;
-    border: 2px solid black;
-    color: black;
-
-}
-
-/* Estilos para el encabezado h1 */
-
-h1 {
-
-    font-family: 'Bangers', cursive;
-    /* Utiliza una fuente similar a la del logo de Los Simpsons. Puedes buscar y agregar la fuente 'Bangers' a tu proyecto. */
-    color: #FFD700;
-    /* Amarillo dorado, que es un color característico de Los Simpsons. */
-    text-shadow: 2px 2px 4px #FF8C00;
-    /* Agrega un ligero efecto de sombra para resaltar el texto. */
-    letter-spacing: 2px;
-    /* Ajusta el espaciado entre letras para un aspecto más estilizado. */
-    text-transform: uppercase;
-    /* Convierte el texto a mayúsculas para un efecto adicional. */
-
-}
-
-
-/* Estilos para la navegación */
-nav {
-    text-align: center;
-
-}
+    background-color: lightblue;
+  
+    h1 {
+      font-family: 'Bangers', cursive;
+      color: #FFD700;
+      text-shadow: 2px 2px 4px #FF8C00;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+  
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: lightblue;
+  
+      a {
+        padding: 5px 15px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #FFD700;
+        }
+      }
+  
+      .navbar-toggler {
+        display: none;
+      }
+  
+      @media (max-width: 767px) {
+        .navbar-toggler {
+          display: none;
+        }
+  
+        .navbar-collapse {
+          display: flex;
+          flex-direction: row; // Cambiado a fila para mantener el menú horizontal
+          justify-content: center;
+          width: 100%;
+          margin-top: 10px;
+        }
+  
+        a.nav-link {
+          padding: 10px 15px; // Ajusta el espaciado interno en pantallas más pequeñas
+        }
+      }
+    }
+  }
+  

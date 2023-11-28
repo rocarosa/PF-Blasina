@@ -4,21 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Productos - Los Simpsons</title>
     <!-- CSS -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/estilo.css">
-
-
-
-</head>
+    <meta name="description"
+        content="Los simpsons - Explora nuestra emocionante sección de artículos y juguetes de Los Simpsons, donde la diversión y la nostalgia se unen. Descubre las últimas novedades y coleccionables que harán las delicias de los fanáticos de la familia amarilla. Desde figuras exclusivas hasta curiosidades inéditas ">
 
 <body>
-    <header>
-        <h1 class="display-3">Los Simpsons</h1>
+    <header class="mb-4">
+        <div class="region region menu"></div>
+        <div>
+            <h1 class="display-3">Los Simpsons</h1>
+        </div>
+
+
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
@@ -28,65 +31,101 @@
                 <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
             </ul>
         </nav>
+        </div>
+        </div>
     </header>
-
     <main>
 
         <h2 class="text-center">Novedades</h2>
 
-        <section id="articulos" class="row">
-            <div class="col-lg-4 mb-4">
-                <div class="hijoFlex">
-                    <img src="../img/lego 2.jpg" alt="Artículo 1">
-                    <h4>Itachy And Scratchy</h4>
-                    <p>$70 USD</p>
-                    <button class="btn btn-primary">Comprar</button>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-1">
+
+            <div class="col">
+                <div class="card">
+                    <img src="../img/art 1 - Lego.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-primary">Comprar</button>
+
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
-                <div class="hijoFlex">
-                    <img src="../img/lego 2.jpg" alt="Artículo 2">
-                    <h4>LEGO los Simpson</h4>
-                    <p>$299 USD</p>
-                    <button class="btn btn-primary">Comprar</button>
+
+            <div class="col">
+                <div class="card">
+                    <img src="https://www.merchandisingplaza.es/196022/2/Munecos-de-accion-Los-Simpsons-Muneco-de-accion-Los-Simpsons---Homer-Deluxe-Figure-l.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-primary">Comprar</button>
+
+                    </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 mb-4">
-                <div class="hijoFlex">
-                    <img src="../img/lego 2.jpg" alt="Artículo 3">
-                    <h4>Homer Radioactivo</h4>
-                    <p>$200 USD</p>
-                    <button class="btn btn-primary">Comprar</button>
+            <div class="col">
+                <div class="card">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_753011-MLA44582104588_012021-O.webp"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-primary">Comprar</button>
+
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <form>
-            <div class="contact_form">
-                <h4>Escríbenos y en breve nos pondremos en contacto contigo</h4>
-                <div class="formulario">
-                    <label for="nombre">Nombre <span class="obligatorio">*</span></label>
-                    <input type="text" name="introducir_nombre" id="nombre" required placeholder="Escribe tu nombre">
+            <div class="col">
+                <div class="card">
+                    <img src="https://farm5.static.flickr.com/4148/5096647013_eef6ee0f94_o.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            to additional content. This content is a little bit longer.</p>
+                        <button class="btn btn-primary">Comprar</button>
 
-                    <label for="email">Email <span class="obligatorio">*</span></label>
-                    <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
-
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
-
-                    <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
-                    <textarea name="introducir_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
-
-                    <button type="submit" name="enviar_formulario" id="enviar" class="btn btn-primary">Enviar</button>
-
-                    <p class="aviso">
-                        <span class="obligatorio">*</span> Los campos son obligatorios.
-                    </p>
+                    </div>
                 </div>
             </div>
-        </form>
+
+
+
+
+            <form>
+                <div class="contact_form">
+                    <h4>Escríbenos y en breve nos pondremos en contacto contigo</h4>
+                    <div class="formulario">
+                        <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+                        <input type="text" name="introducir_nombre" id="nombre" required
+                            placeholder="Escribe tu nombre">
+
+                        <label for="email">Email <span class="obligatorio">*</span></label>
+                        <input type="email" name="introducir_email" id="email" required placeholder="Escribe tu Email">
+
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+
+                        <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
+                        <textarea name="introducir_mensaje" id="mensaje" required
+                            placeholder="Deja aquí tu comentario..."></textarea>
+
+                        <button type="submit" name="enviar_formulario" id="enviar"
+                            class="btn btn-primary">Enviar</button>
+
+                        <p class="aviso">
+                            <span class="obligatorio">*</span> Los campos son obligatorios.
+                        </p>
+                    </div>
+                </div>
+            </form>
     </main>
 
     <footer class="footer1">

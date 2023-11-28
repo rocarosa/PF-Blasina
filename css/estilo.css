@@ -29,35 +29,53 @@ h3 {
 
 header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  position: sticky;
-  top: 0;
-  height: 120px;
-  width: 100%;
-  background-color: beige;
+  justify-content: center;
+  height: auto;
   padding: 10px;
-  border: 2px solid black;
-  color: black;
+  background-color: lightblue;
 }
-
-/* Estilos para el encabezado h1 */
-h1 {
+header h1 {
   font-family: "Bangers", cursive;
-  /* Utiliza una fuente similar a la del logo de Los Simpsons. Puedes buscar y agregar la fuente 'Bangers' a tu proyecto. */
   color: #FFD700;
-  /* Amarillo dorado, que es un color característico de Los Simpsons. */
   text-shadow: 2px 2px 4px #FF8C00;
-  /* Agrega un ligero efecto de sombra para resaltar el texto. */
   letter-spacing: 2px;
-  /* Ajusta el espaciado entre letras para un aspecto más estilizado. */
   text-transform: uppercase;
-  /* Convierte el texto a mayúsculas para un efecto adicional. */
+  margin-bottom: 10px;
 }
-
-/* Estilos para la navegación */
-nav {
-  text-align: center;
+header nav {
+  display: flex;
+  justify-content: center;
+  background-color: lightblue;
+}
+header nav a {
+  padding: 5px 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+header nav a:hover {
+  color: #FFD700;
+}
+header nav .navbar-toggler {
+  display: none;
+}
+@media (max-width: 767px) {
+  header nav .navbar-toggler {
+    display: none;
+  }
+  header nav .navbar-collapse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  header nav a.nav-link {
+    padding: 10px 15px;
+  }
 }
 
 /* Estilos para el cuerpo del documento */
