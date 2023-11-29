@@ -1,14 +1,62 @@
-/* Estilos para el encabezado h3 */
-h2 {
-    font-size: 36px;
-    padding-bottom: 30px;
-    color: orange;
-    border-radius: 15px;
+.hijoFlex {
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    border: 50px;
+
+}
+
+.contact_form {
+    background-color: rgb(194, 194, 53);
+    padding: 20px;
+    margin-top: 20px;
+    color: black;
+    flex-direction: column;
+
+    h3 {
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+        color: #333;
+        /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+        font-size: 30px;
+        /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+        font-weight: bold;
+        /* Puedes hacer que los subtítulos sean más audaces. */
+        margin-bottom: 10px;
+        /* Agrega un poco de espacio en la parte inferior para separar los subtítulos del contenido siguiente. */
+    }
+
+    h4 {  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+        /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+        color: #333;
+        /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+        font-size: 15px;
+
+
+    }
+
+
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
 
     button {
         height: 45px;
         text-transform: uppercase;
-        background-color: rgb(255, 217, 0);
+        background-color: #333;
         border: 2px solid black;
         border-radius: 5px;
         width: 100%;
@@ -18,32 +66,5 @@ h2 {
             color: #fff;
             margin: 0;
         }
-
-        h4 {
-            font-size: 20px;
-            padding-bottom: 30px;
-            color: black;
-            border-radius: 15px;
-
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        img {
-            border: 15px;
-            column-gap: normal;
-        }
-
     }
-}
-
-
-.hijoFlex {
-    flex-wrap: wrap;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    border: 50px;
 }

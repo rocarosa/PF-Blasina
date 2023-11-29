@@ -10,47 +10,73 @@
     <meta name="description"
         content="Los simpsons - Capitulos online.  Descubre información exclusiva, episodios memorables, curiosidades y más. Sumérgete en la vida de la familia amarilla más famosa de la televisión y disfruta de un festín de entretenimiento simpsoniano. ¡Únete a nosotros y ríete a carcajadas con las travesuras de Homero, Marge, Bart, Lisa y Maggie en cada clic!">
 
+<!-- CSS AOS-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
-
     <header class="mb-4">
-        <div>
-            <h1 class="display-3">Los Simpsons</h1>
-        </div>
-
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="biografia.html">Biografía</a></li>
-                <li class="nav-item"><a class="nav-link" href="capitulos.html">Capitulos</a></li>
-                <li class="nav-item"><a class="nav-link" href="articulos.html">Productos</a></li>
-                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-            </ul>
+            <div class="container">
+
+                <img src="../img/logosinfondo.png" alt="logo" height="100">
+                <div>
+                    <h1 class="display-3">Los Simpsons</h1>
+                </div>
+
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="biografia.html">Biografía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="capitulos.html">Capítulos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="articulos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        </div>
     </header>
 
     <main class="container">
+
         <h2 class="text-center">Capitulos</h2>
 
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-            <div class="col">
+            <div class="col" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h4> Capitulo 1 </h4>
-                <img src="../img/descarga (1).jpg" class="card-img-top" alt="">
+                <video src="../video/1.mp4.mp4" controls></video>
                 <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias
-                        omnis unde ex iure eveniet odio. Quidem saepe esse vero!</p>
+                    <p class="card-text">La Navidad llega a Springfield y en casa de los Simpson comienzan los problemas. Marge se ve obligada a gastar todos los ahorros de la familia para quitar un dibujo tatuado en el brazo de Bart.</p>
                 </div>
 
             </div>
 
 
-            <div class="col">
+            <div class="col" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h4> Capitulo 2 </h4>
                 <img src="../img/descarga (1).jpg" class="card-img-top" alt="">
                 <div class="card-body">
@@ -61,7 +87,9 @@
             </div>
 
 
-            <div class="col">
+            <div class="col" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h4> Capitulo 3 </h4>
                 <img src="../img/descarga (1).jpg" class="card-img-top" alt="">
                 <div class="card-body">
@@ -71,7 +99,9 @@
 
             </div>
 
-            <div class="col">
+            <div class="col" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h4> Capitulo 4 </h4>
                 <img src="../img/descarga (1).jpg" class="card-img-top" alt="">
                 <div class="card-body">
@@ -82,7 +112,9 @@
             </div>
 
 
-            <div class="col">
+            <div class="col" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h4> Capitulo 5 </h4>
                 <img src="../img/descarga (1).jpg" class="card-img-top" alt="">
                 <div class="card-body">
@@ -93,7 +125,9 @@
             </div>
 
 
-            <div class="col">
+            <div class="col" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h4> Capitulo 6 </h4>
                 <img src="../img/descarga (1).jpg" class="card-img-top" alt="">
                 <div class="card-body">
@@ -115,8 +149,13 @@
 </footer>
 </main>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 
+<script>
+    AOS.init();
+</script>
 </html>

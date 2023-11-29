@@ -1,14 +1,49 @@
+
 /* Estilos para la sección de noticias */
 
 #noticias {
-    background-color: yellow;
-    border: 1px solid black;
-    color: black;
-    padding: 20px;
+ 
+    padding: 50px;
 
-    .botton {
-        color: violet;
+ 
+
+    .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 100px;
+
+
+
+        h3 {      font-family: 'Bangers', cursive;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px #FF8C00;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        font-size: 30px;}
+        p{     
+            color: black;
+            text-shadow: 2px 2px 4px gray;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        font-size: 15px;}
+
+        a{     
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+        }
     }
-
-  }
+    
   
+
+
+}

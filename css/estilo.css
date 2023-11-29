@@ -29,6 +29,7 @@ h3 {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -55,6 +56,7 @@ header nav a {
   color: #333;
   font-weight: bold;
   transition: color 0.3s ease;
+  background-color: lightblue;
 }
 header nav a:hover {
   color: #FFD700;
@@ -65,6 +67,7 @@ header nav .navbar-toggler {
 @media (max-width: 767px) {
   header nav .navbar-toggler {
     display: none;
+    background-color: lightblue;
   }
   header nav .navbar-collapse {
     display: flex;
@@ -72,6 +75,7 @@ header nav .navbar-toggler {
     justify-content: center;
     width: 100%;
     margin-top: 10px;
+    background-color: lightblue;
   }
   header nav a.nav-link {
     padding: 10px 15px;
@@ -84,17 +88,57 @@ body {
   background-color: #1d1c1c;
   color: azure;
 }
-
-/* Estilos para la sección principal */
-.main {
-  font-size: 80px;
+body .main h2 {
+  font-family: "Arial", sans-serif;
+  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+  color: #333;
+  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 24px;
+  /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+  font-weight: bold;
+  /* Puedes hacer que los subtítulos sean más audaces. */
+  margin-bottom: 10px;
+  /* Agrega un poco de espacio en la parte inferior para separar los subtítulos del contenido siguiente. */
 }
-.main h2 {
-  font-family: "Arial", sans-serif; /* Puedes elegir una fuente sans-serif común para los subtítulos. */
-  color: #333; /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
-  font-size: 24px; /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
-  font-weight: bold; /* Puedes hacer que los subtítulos sean más audaces. */
-  margin-bottom: 10px; /* Agrega un poco de espacio en la parte inferior para separar los subtítulos del contenido siguiente. */
+body .main p {
+  font-family: "Arial", sans-serif;
+  /* Utiliza una fuente sans-serif común para los párrafos. */
+  color: #b1adad;
+  /* Color de texto gris oscuro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 20px;
+  /* Tamaño de la fuente para los párrafos. Ajusta según sea necesario. */
+  line-height: 1.5;
+  /* Espaciado entre líneas para una mejor legibilidad. Puedes ajustar según tus preferencias. */
+  margin-bottom: 30px;
+  /* Agrega espacio en la parte inferior para separar los párrafos. */
+}
+body .main h3 {
+  color: #c5c1c1;
+  /* Color de texto gris oscuro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 25px;
+  /* Tamaño de la fuente para los párrafos. Ajusta según sea necesario. */
+  line-height: 1.5;
+  /* Espaciado entre líneas para una mejor legibilidad. Puedes ajustar según tus preferencias. */
+  margin-bottom: 30px;
+}
+body .main button {
+  height: 45px;
+  text-transform: uppercase;
+  background-color: rgb(255, 217, 0);
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+body .main button h4 {
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: black;
+  border-radius: 15px;
+}
+body .main button img {
+  border: 15px;
+  column-gap: normal;
 }
 
 /* Estilos para el contenedor padre del flex */
@@ -139,41 +183,7 @@ body {
   position: absolute;
   width: 100%;
   background-color: black;
-  padding: 5px;
-}
-
-/* Estilos para el encabezado h3 */
-h2 {
-  font-size: 36px;
-  padding-bottom: 30px;
-  color: orange;
-  border-radius: 15px;
-}
-h2 button {
-  height: 45px;
-  text-transform: uppercase;
-  background-color: rgb(255, 217, 0);
-  border: 2px solid black;
-  border-radius: 5px;
-  width: 100%;
-  cursor: pointer;
-}
-h2 button p {
-  color: #fff;
-  margin: 0;
-}
-h2 button h4 {
-  font-size: 20px;
-  padding-bottom: 30px;
-  color: black;
-  border-radius: 15px;
-}
-h2 button p {
-  font-size: 18px;
-}
-h2 button img {
-  border: 15px;
-  column-gap: normal;
+  padding: 30px;
 }
 
 .hijoFlex {
@@ -184,35 +194,38 @@ h2 button img {
   border: 50px;
 }
 
-/* Estilos para la sección de noticias */
-#noticias {
-  background-color: yellow;
-  border: 1px solid black;
-  color: black;
-  padding: 20px;
-}
-#noticias .botton {
-  color: violet;
-}
-
-form {
-  background-color: #f8f9fa;
+.contact_form {
+  background-color: rgb(194, 194, 53);
   padding: 20px;
   margin-top: 20px;
+  color: black;
+  flex-direction: column;
 }
-form h2 {
-  text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+.contact_form h3 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+  color: #333;
+  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 30px;
+  /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+  font-weight: bold;
+  /* Puedes hacer que los subtítulos sean más audaces. */
+  margin-bottom: 10px;
+  /* Agrega un poco de espacio en la parte inferior para separar los subtítulos del contenido siguiente. */
 }
-
-label {
+.contact_form h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+  color: #333;
+  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 15px;
+}
+.contact_form label {
   display: block;
   margin-bottom: 5px;
 }
-
-input,
-textarea {
+.contact_form input,
+.contact_form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -220,19 +233,73 @@ textarea {
   border-radius: 5px;
   box-sizing: border-box;
 }
-
-button {
+.contact_form button {
   height: 45px;
   text-transform: uppercase;
-  background-color: yellow;
+  background-color: #333;
   border: 2px solid black;
   border-radius: 5px;
   width: 100%;
   cursor: pointer;
 }
-button p {
+.contact_form button p {
   color: #fff;
   margin: 0;
+}
+
+/* Estilos para la sección de noticias */
+#noticias {
+  padding: 50px;
+}
+#noticias .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 100px;
+}
+#noticias .container h3 {
+  font-family: "Bangers", cursive;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px #FF8C00;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+#noticias .container p {
+  color: black;
+  text-shadow: 2px 2px 4px gray;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#noticias .container a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  font-family: "Arial", sans-serif;
+  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+  color: rgb(218, 204, 204) 0f0;
+  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 34px;
+  /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+  font-weight: bold;
+  text-align: center;
+}
+.container h3 {
+  font-size: 20px;
+  color: #d3cdcd;
+  margin-bottom: 1.5rem;
+  padding: 10px 15px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
