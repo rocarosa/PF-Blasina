@@ -4,7 +4,7 @@
     h2 {
         font-family: 'Arial', sans-serif;
         /* Puedes elegir una fuente sans-serif común para los subtítulos. */
-        color: rgb(218, 204, 204)0f0;
+        color: pink;
         /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
         font-size: 34px;
         /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
@@ -12,13 +12,35 @@
         text-align: center;
 
       }
-      
+
+   
       // Definición de estilos para h3
       h3 {
-        font-size: 20px; // Tamaño de fuente para h3
+        font-size: 25px; // Tamaño de fuente para h3
         color: #d3cdcd; // Color del texto para h3
         margin-bottom: 1.5rem; // Margen inferior para h3
         padding: 10px 15px;
 
       }
+
+      h4 {
+        font-size: 20px;
+        padding-bottom: 30px;
+        color: rgb(216, 215, 205);
+        border-radius: 15px;
+
+    }
+
+      p {
+        font-family: 'Arial', sans-serif;
+        /* Utiliza una fuente sans-serif común para los párrafos. */
+        color: #b1adad;
+        /* Color de texto gris oscuro, pero puedes ajustarlo según tus preferencias. */
+        font-size: 20px;
+        /* Tamaño de la fuente para los párrafos. Ajusta según sea necesario. */
+        line-height: 1.5;
+        /* Espaciado entre líneas para una mejor legibilidad. Puedes ajustar según tus preferencias. */
+        margin-bottom: 30px;
+        /* Agrega espacio en la parte inferior para separar los párrafos. */
+    }
 }

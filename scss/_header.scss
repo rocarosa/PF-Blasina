@@ -1,64 +1,31 @@
 header {
+  background-color: #f7dede; /* Color de fondo del encabezado, ajusta según tu diseño. */
+  padding: 20px; /* Ajusta el relleno según sea necesario. */
+
+  .logo-container {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: auto;
-    padding: 10px;
-    background-color: lightblue;
-  
-    h1 {
-      font-family: 'Bangers', cursive;
-      color: #FFD700;
-      text-shadow: 2px 2px 4px #FF8C00;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-  
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: lightblue;
-   
-  
-      a {
-        padding: 5px 15px;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        transition: color 0.3s ease;
-        background-color: lightblue;
-  
-        &:hover {
-          color: #FFD700;
-        }
-      }
-  
-      .navbar-toggler {
-        display: none;
-      }
-  
-      @media (max-width: 767px) {
-        .navbar-toggler {
-          display: none;
-          background-color: lightblue;
-        }
-  
-        .navbar-collapse {
-          display: flex;
-          flex-direction: row; // Cambiado a fila para mantener el menú horizontal
-          justify-content: center;
-          width: 100%;
-          margin-top: 10px;
-          background-color: lightblue;
-        }
-  
-        a.nav-link {
-          padding: 10px 15px; // Ajusta el espaciado interno en pantallas más pequeñas
-        }
-      }
+
+    img {
+      max-width: 150px; /* Ajusta el ancho máximo del logotipo según tus necesidades. */
+      height: auto; /* Permite que la altura se ajuste automáticamente para mantener las proporciones. */
+      margin-right: 20px; /* Agrega espacio a la derecha del logotipo para separarlo del texto. */
     }
   }
-  
+
+
+
+
+  h1 {
+    font-family: 'Bangers', cursive;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px #FF8C00;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+
+
+}
