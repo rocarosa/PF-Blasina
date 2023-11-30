@@ -154,70 +154,79 @@ body .main button img {
   padding: 30px;
 }
 
-.hijoFlex {
-  flex-wrap: wrap;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  border: 50px;
+.container {
+  margin-top: 20px;
 }
 
-.contact_form {
-  background-color: pink;
-  padding: 20px;
-  margin-top: 20px;
-  color: black;
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px; /* Establece la altura de la imagen */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 15px;
+  height: 100%;
+  display: flex;
   flex-direction: column;
-  max-width: 600px; /* Establece el ancho máximo del formulario según tus necesidades */
-  margin: auto; /* Centra el formulario horizontalmente */
-  padding: 20px;
 }
-.contact_form h3 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
-  color: #333;
-  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
-  font-size: 30px;
-  /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
-  font-weight: bold;
-  /* Puedes hacer que los subtítulos sean más audaces. */
+
+.card-title {
+  font-size: 1.2rem;
   margin-bottom: 10px;
-  /* Agrega un poco de espacio en la parte inferior para separar los subtítulos del contenido siguiente. */
 }
-.contact_form h4 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
-  color: #333;
-  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
-  font-size: 15px;
-}
-.contact_form label {
-  display: block;
-  margin-bottom: 5px;
-}
-.contact_form input,
-.contact_form textarea {
-  width: 100%;
-  padding: 10px;
+
+.card-text {
+  font-size: 1rem;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+  flex-grow: 1; /* Hace que el texto ocupe el espacio restante */
 }
-.contact_form button {
-  height: 45px;
-  text-transform: uppercase;
-  background-color: #333;
-  border: 2px solid black;
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
   border-radius: 5px;
-  width: 100%;
   cursor: pointer;
 }
-.contact_form button p {
-  color: #fff;
-  margin: 0;
+
+.row-cols-1 .col,
+.row-cols-sm-2 .col,
+.row-cols-md-3 .col {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
+@media (min-width: 576px) {
+  .row-cols-sm-2 .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .row-cols-md-3 .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
 /* Estilos para la sección de noticias */
 #noticias {
   padding: 50px;
