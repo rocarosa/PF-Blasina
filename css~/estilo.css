@@ -1,0 +1,312 @@
+@charset "UTF-8";
+body {
+  background-color: sienna;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 6rem;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.black {
+  color: black;
+}
+
+.pink {
+  color: pink;
+}
+
+header {
+  background-color: #f7dede; /* Color de fondo del encabezado, ajusta según tu diseño. */
+  padding: 20px; /* Ajusta el relleno según sea necesario. */
+}
+header .logo-container {
+  display: flex;
+  align-items: center;
+}
+header .logo-container img {
+  max-width: 150px; /* Ajusta el ancho máximo del logotipo según tus necesidades. */
+  height: auto; /* Permite que la altura se ajuste automáticamente para mantener las proporciones. */
+  margin-right: 20px; /* Agrega espacio a la derecha del logotipo para separarlo del texto. */
+}
+header h1 {
+  font-family: "Bangers", cursive;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px #FF8C00;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1d1c1c;
+  color: azure;
+}
+body .main h2 {
+  font-family: "Arial", sans-serif;
+  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+  color: #333;
+  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 24px;
+  /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+  font-weight: bold;
+  /* Puedes hacer que los subtítulos sean más audaces. */
+  margin-bottom: 10px;
+  /* Agrega un poco de espacio en la parte inferior para separar los subtítulos del contenido siguiente. */
+}
+body .main p {
+  font-family: "Arial", sans-serif;
+  /* Utiliza una fuente sans-serif común para los párrafos. */
+  color: #b1adad;
+  /* Color de texto gris oscuro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 20px;
+  /* Tamaño de la fuente para los párrafos. Ajusta según sea necesario. */
+  line-height: 1.5;
+  /* Espaciado entre líneas para una mejor legibilidad. Puedes ajustar según tus preferencias. */
+  margin-bottom: 30px;
+  /* Agrega espacio en la parte inferior para separar los párrafos. */
+}
+body .main h3 {
+  color: #c5c1c1;
+  /* Color de texto gris oscuro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 25px;
+  /* Tamaño de la fuente para los párrafos. Ajusta según sea necesario. */
+  line-height: 1.5;
+  /* Espaciado entre líneas para una mejor legibilidad. Puedes ajustar según tus preferencias. */
+  margin-bottom: 30px;
+}
+body .main button {
+  height: 45px;
+  text-transform: uppercase;
+  background-color: rgb(255, 217, 0);
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+body .main button h4 {
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: black;
+  border-radius: 15px;
+}
+body .main button img {
+  border: 15px;
+  column-gap: normal;
+}
+
+/* Estilos para el contenedor padre del flex */
+.padreFlex {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* Estilos para el contenedor grid */
+.gridPadre {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Estilos para las imágenes */
+.img,
+.logo,
+.imagen-adaptada,
+.background-image {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para el texto sobre la imagen */
+.text-over-image {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Estilos para el pie de página */
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  padding: 30px;
+}
+
+.container {
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.row-cols-1 .col,
+.row-cols-sm-2 .col,
+.row-cols-md-3 .col {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .row-cols-sm-2 .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .row-cols-md-3 .col {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+}
+/* Estilos para la sección de noticias */
+#noticias {
+  padding: 50px;
+}
+#noticias .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 100px;
+}
+#noticias .container h2 {
+  font-family: "Arial", sans-serif;
+  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+  color: yellow;
+  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 34px;
+  /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+  font-weight: bold;
+  text-align: center;
+}
+#noticias .container h3 {
+  font-family: "Bangers", cursive;
+  color: #FFD700;
+  text-shadow: 2px 2px 4px #FF8C00;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+#noticias .container p {
+  color: black;
+  text-shadow: 2px 2px 4px gray;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#noticias .container a {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  font-family: "Arial", sans-serif;
+  /* Puedes elegir una fuente sans-serif común para los subtítulos. */
+  color: pink;
+  /* Color de texto negro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 34px;
+  /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
+  font-weight: bold;
+  text-align: center;
+}
+.container h3 {
+  font-size: 25px;
+  color: #d3cdcd;
+  margin-bottom: 1.5rem;
+  padding: 10px 15px;
+}
+.container h4 {
+  font-size: 20px;
+  padding-bottom: 30px;
+  color: rgb(216, 215, 205);
+  border-radius: 15px;
+}
+.container p {
+  font-family: "Arial", sans-serif;
+  /* Utiliza una fuente sans-serif común para los párrafos. */
+  color: #b1adad;
+  /* Color de texto gris oscuro, pero puedes ajustarlo según tus preferencias. */
+  font-size: 20px;
+  /* Tamaño de la fuente para los párrafos. Ajusta según sea necesario. */
+  line-height: 1.5;
+  /* Espaciado entre líneas para una mejor legibilidad. Puedes ajustar según tus preferencias. */
+  margin-bottom: 30px;
+  /* Agrega espacio en la parte inferior para separar los párrafos. */
+}
+
+/*# sourceMappingURL=estilo.css.map */
