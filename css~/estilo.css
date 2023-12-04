@@ -24,7 +24,7 @@ h3 {
 }
 
 .pink {
-  color: rgb(252, 171, 185);
+  color: pink;
 }
 
 header {
@@ -108,6 +108,74 @@ body .main button img {
   border: 15px;
   column-gap: normal;
 }
+body form {
+  background-color: #f7dede;
+  /* Color de fondo del formulario, ajusta según tu diseño. */
+  padding: 20px;
+  /* Ajusta el relleno según sea necesario. */
+  border-radius: 10px;
+  /* Bordes redondeados para el formulario. */
+}
+body .contact_form {
+  text-align: center;
+  /* Centra el contenido del formulario. */
+}
+body .contact_form h3 {
+  font-family: "Bangers", cursive;
+  /* Fuente llamativa similar a la de Los Simpsons. */
+  color: #FFD700;
+  /* Color amarillo similar al de Los Simpsons. */
+  text-shadow: 2px 2px 4px #FF8C00;
+  /* Sombra de texto para resaltar. */
+  font-size: 40px;
+}
+body .contact_form h4 {
+  margin-bottom: 20px;
+  /* Espacio entre el título y el formulario. */
+}
+body .formulario label {
+  display: block;
+  margin-bottom: 5px;
+  color: #FFD700;
+  /* Color amarillo para etiquetas de formulario. */
+}
+body .formulario input,
+body .formulario textarea {
+  width: 100%;
+  /* Ocupa el ancho completo del contenedor. */
+  padding: 8px;
+  /* Espaciado interno de los campos de entrada. */
+  margin-bottom: 15px;
+  /* Espacio entre los campos de entrada. */
+  border: 1px solid #ddd;
+  /* Borde del campo de entrada. */
+  border-radius: 5px;
+  /* Bordes redondeados para los campos de entrada. */
+}
+body .formulario textarea {
+  resize: vertical;
+  /* Permite redimensionar verticalmente el campo de texto. */
+}
+body .btn-primary {
+  background-color: #007bff;
+  /* Color azul para el botón. */
+  color: #ffffff;
+  /* Texto blanco para el botón. */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+body .btn-primary:hover {
+  background-color: #0056b3;
+  /* Cambio de color al pasar el ratón sobre el botón. */
+}
+body .aviso {
+  color: #FFD700;
+  /* Color amarillo para el aviso. */
+  font-style: italic;
+  margin-top: 10px;
+}
 
 /* Estilos para el contenedor padre del flex */
 .padreFlex {
@@ -161,12 +229,14 @@ body .main button img {
 h2 {
   text-align: center;
   margin-bottom: 30px;
+  color: rgb(97, 96, 96);
 }
 
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
   transition: box-shadow 0.3s;
+  height: 100%;
 }
 
 .card:hover {
@@ -174,7 +244,7 @@ h2 {
 }
 
 .card-img-top {
-  max-height: 200px;
+  height: 200px; /* Establece la altura de la imagen */
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -182,6 +252,9 @@ h2 {
 
 .card-body {
   padding: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
@@ -192,6 +265,8 @@ h2 {
 .card-text {
   font-size: 1rem;
   margin-bottom: 15px;
+  color: rgb(88, 88, 88);
+  flex-grow: 1; /* Hace que el texto ocupe el espacio restante */
 }
 
 .btn-primary {
@@ -201,10 +276,6 @@ h2 {
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.btn-primary:hover {
-  background-color: #0056b3;
 }
 
 .row-cols-1 .col,
