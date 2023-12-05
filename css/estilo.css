@@ -176,6 +176,11 @@ body .aviso {
   font-style: italic;
   margin-top: 10px;
 }
+body .footer container {
+  background-color: pink; /* Cambia el fondo a rosa */
+  padding: 20px 0; /* Ajusta el espacio interno del footer */
+  color: white; /* Cambia el color del texto a blanco para mayor contraste */
+}
 
 /* Estilos para el contenedor padre del flex */
 .padreFlex {
@@ -214,12 +219,10 @@ body .aviso {
   color: white;
 }
 
-/* Estilos para el pie de página */
-.footer {
-  position: absolute;
-  width: 100%;
-  background-color: black;
-  padding: 30px;
+.footer container {
+  background-color: pink; /* Cambia el fondo a rosa */
+  padding: 20px 0; /* Ajusta el espacio interno del footer */
+  color: white; /* Cambia el color del texto a blanco para mayor contraste */
 }
 
 .container {
