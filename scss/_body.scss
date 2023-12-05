@@ -79,85 +79,88 @@ body {
         /* Ajusta el relleno según sea necesario. */
         border-radius: 10px;
         /* Bordes redondeados para el formulario. */
-    }
 
-    .contact_form {
-        text-align: center;
-        /* Centra el contenido del formulario. */
-    }
 
-    .contact_form h3 {
-        font-family: 'Bangers', cursive;
-        /* Fuente llamativa similar a la de Los Simpsons. */
-        color: #FFD700;
-        /* Color amarillo similar al de Los Simpsons. */
-        text-shadow: 2px 2px 4px #FF8C00;
-        /* Sombra de texto para resaltar. */
-        font-size: 40px;
-    }
+        .contact_form {
+            text-align: center;
+            /* Centra el contenido del formulario. */
+        }
 
-    .contact_form h4 {
-        margin-bottom: 20px;
-        /* Espacio entre el título y el formulario. */
-    }
+        .contact_form h3 {
+            font-family: 'Bangers', cursive;
+            /* Fuente llamativa similar a la de Los Simpsons. */
+            color: #FFD700;
+            /* Color amarillo similar al de Los Simpsons. */
+            text-shadow: 2px 2px 4px #FF8C00;
+            /* Sombra de texto para resaltar. */
+            font-size: 40px;
+        }
 
-    .formulario label {
-        display: block;
-        margin-bottom: 5px;
-        color: #FFD700;
-        /* Color amarillo para etiquetas de formulario. */
-    }
+        .contact_form h4 {
+            margin-bottom: 20px;
+            /* Espacio entre el título y el formulario. */
+        }
 
-    .formulario input,
-    .formulario textarea {
-        width: 100%;
-        /* Ocupa el ancho completo del contenedor. */
-        padding: 8px;
-        /* Espaciado interno de los campos de entrada. */
-        margin-bottom: 15px;
-        /* Espacio entre los campos de entrada. */
-        border: 1px solid #ddd;
-        /* Borde del campo de entrada. */
-        border-radius: 5px;
-        /* Bordes redondeados para los campos de entrada. */
-    }
+        .formulario label {
+            display: block;
+            margin-bottom: 5px;
+            color: #FFD700;
+            /* Color amarillo para etiquetas de formulario. */
+        }
 
-    .formulario textarea {
-        resize: vertical;
-        /* Permite redimensionar verticalmente el campo de texto. */
-    }
+        .formulario input,
+        .formulario textarea {
+            width: 100%;
+            /* Ocupa el ancho completo del contenedor. */
+            padding: 8px;
+            /* Espaciado interno de los campos de entrada. */
+            margin-bottom: 15px;
+            /* Espacio entre los campos de entrada. */
+            border: 1px solid #ddd;
+            /* Borde del campo de entrada. */
+            border-radius: 5px;
+            /* Bordes redondeados para los campos de entrada. */
+        }
 
-    .btn-primary {
-        background-color: #007bff;
-        /* Color azul para el botón. */
-        color: #ffffff;
-        /* Texto blanco para el botón. */
-        border: none;
-        padding: 10px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
+        .formulario textarea {
+            resize: vertical;
+            /* Permite redimensionar verticalmente el campo de texto. */
+        }
 
-    .btn-primary:hover {
-        background-color: #0056b3;
-        /* Cambio de color al pasar el ratón sobre el botón. */
-    }
+        .btn-primary {
+            background-color: #007bff;
+            /* Color azul para el botón. */
+            color: #ffffff;
+            /* Texto blanco para el botón. */
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    .aviso {
-        color: #FFD700;
-        /* Color amarillo para el aviso. */
-        font-style: italic;
-        margin-top: 10px;
-    }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            /* Cambio de color al pasar el ratón sobre el botón. */
+        }
 
+        .aviso {
+            color: #FFD700;
+            /* Color amarillo para el aviso. */
+            font-style: italic;
+            margin-top: 10px;
+        }
+    }
 
 
     .footer {
         container {
-            background-color: pink; /* Cambia el fondo a rosa */
-            padding: 20px 0; /* Ajusta el espacio interno del footer */
-            color: white; /* Cambia el color del texto a blanco para mayor contraste */
-          
+            background-color: pink;
+            /* Cambia el fondo a rosa */
+            padding: 20px 0;
+            /* Ajusta el espacio interno del footer */
+            color: white;
+            /* Cambia el color del texto a blanco para mayor contraste */
+
         }
     }
 
