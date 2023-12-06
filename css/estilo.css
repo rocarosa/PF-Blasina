@@ -219,7 +219,11 @@ body .aviso {
   position: absolute;
   width: 100%;
   background-color: black;
+  color: black;
   padding: 30px;
+}
+.footer h5 {
+  color: black;
 }
 
 .container {
