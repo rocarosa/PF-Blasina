@@ -3,6 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #1d1c1c;
     color: azure;
+    text-align: center;
 
     .main {
 
@@ -40,6 +41,7 @@ body {
             line-height: 1.5;
             /* Espaciado entre líneas para una mejor legibilidad. Puedes ajustar según tus preferencias. */
             margin-bottom: 30px;
+            text-align: center;
         }
 
 
@@ -73,7 +75,7 @@ body {
     }
 
     form {
-        background-color: #f7dede;
+        background-color: #f1a9a9;
         /* Color de fondo del formulario, ajusta según tu diseño. */
         padding: 20px;
         /* Ajusta el relleno según sea necesario. */
@@ -93,12 +95,14 @@ body {
         /* Color amarillo similar al de Los Simpsons. */
         text-shadow: 2px 2px 4px #FF8C00;
         /* Sombra de texto para resaltar. */
-        font-size: 40px;
+        font-size: 30px;
+        text-align: center;
     }
 
     .contact_form h4 {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         /* Espacio entre el título y el formulario. */
+        margin: 20px;
     }
 
     .formulario label {
@@ -107,6 +111,19 @@ body {
         color: #FFD700;
         /* Color amarillo para etiquetas de formulario. */
     }
+
+    .container h1 {
+        margin-bottom: 20px;
+    }
+
+    .container h3 {
+        margin-bottom: 20px;
+    }
+    
+    .container p {
+        margin-bottom: 20px;
+    }
+
 
     .formulario input,
     .formulario textarea {
@@ -120,6 +137,8 @@ body {
         /* Borde del campo de entrada. */
         border-radius: 5px;
         /* Bordes redondeados para los campos de entrada. */
+        padding: 20px 0;
+
     }
 
     .formulario textarea {
@@ -136,6 +155,7 @@ body {
         padding: 10px 15px;
         border-radius: 5px;
         cursor: pointer;
+
     }
 
     .btn-primary:hover {
@@ -152,7 +172,14 @@ body {
 
 
 
-
+    .list-inline {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .list-inline-item {
+        margin-right: 10px;
+    }
 
 
 

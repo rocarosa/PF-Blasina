@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mantente al día con las últimas novedades y noticias relacionadas con Los Simpsons. Desde anuncios de nuevos episodios hasta eventos especiales, esta sección te mantendrá informado sobre todo lo que rodea a la familia amarilla más famosa de la televisión. ¡No te pierdas ni un solo chisme de Springfield!">
+    <meta name="description"
+        content="Mantente al día con las últimas novedades y noticias relacionadas con Los Simpsons. Desde anuncios de nuevos episodios hasta eventos especiales, esta sección te mantendrá informado sobre todo lo que rodea a la familia amarilla más famosa de la televisión. ¡No te pierdas ni un solo chisme de Springfield!">
 
     <title>Noticias - Los Simpsons</title>
     <!-- CSS -->
@@ -57,24 +58,22 @@
         </nav>
     </header>
 
-    <main class="container">
+    <main class="container text-center">
 
-        <h2 class="text-center">¡Ultimas Noticias!</h2>
+        <h2 class="mb-4">¡Ultimas Noticias!</h2>
 
-
-        <div id="noticias">
-            <article class="container">
-                <h3>Los Simpson cumplen 23 Años!<h3>
-                        <img src="../img/descarga3.jpg" alt="" class="img-fluid">
-                        <p>Link a la noticia completa ---- </p>
-                        <a href="https://thesimpsonsrp.com/29857/thesimpsonsrp-com-cumple-23-anos/"
-                            class="btn btn-primary">
-                            Cumpleaños 23
-                        </a>
+        <div id="noticias" class="row">
+            <article class="col-md-6 mx-auto mb-4">
+                <h3>Los Simpson cumplen 23 Años!</h3>
+                <img src="../img/descarga3.jpg" alt="" class="img-fluid">
+                <p>Link a la noticia completa ---- </p>
+                <a href="https://thesimpsonsrp.com/29857/thesimpsonsrp-com-cumple-23-anos/" class="btn btn-primary">
+                    Cumpleaños 23
+                </a>
             </article>
 
-            <article class="container">
-                <h3> Información sobre la temporada 35 </h3>
+            <article class="col-md-6 mx-auto mb-4">
+                <h3>Informacion sobre la temporada 35</h3>
                 <img src="../img/descarga2.jpg" alt="" class="img-fluid">
                 <p>Link a la noticia completa ---- </p>
                 <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
@@ -114,7 +113,8 @@
                 <!-- Formulario de suscripción básico -->
                 <form class="form-inline">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                        <input type="email" class="form-control" id="email" name="email" autocomplete="email"
+                            placeholder="Tu correo electrónico">
                     </div>
                     <button type="submit" class="btn btn-primary">Suscribirse</button>
                 </form>

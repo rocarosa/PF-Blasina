@@ -29,6 +29,9 @@
             /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
             font-weight: bold;
             text-align: center;
+            word-wrap: break-word; /* Agregamos esta línea para el ajuste de palabras */
+            
+
           }
           
 

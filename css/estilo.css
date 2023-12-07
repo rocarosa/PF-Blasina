@@ -29,7 +29,7 @@ h3 {
 
 header {
   background-color: #f7dede; /* Color de fondo del encabezado, ajusta según tu diseño. */
-  padding: 20px; /* Ajusta el relleno según sea necesario. */
+  padding: 20px 0;
 }
 header .logo-container {
   display: flex;
@@ -55,6 +55,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #1d1c1c;
   color: azure;
+  text-align: center;
 }
 body .main h2 {
   font-family: "Arial", sans-serif;
@@ -88,6 +89,7 @@ body .main h3 {
   line-height: 1.5;
   /* Espaciado entre líneas para una mejor legibilidad. Puedes ajustar según tus preferencias. */
   margin-bottom: 30px;
+  text-align: center;
 }
 body .main button {
   height: 45px;
@@ -109,7 +111,7 @@ body .main button img {
   column-gap: normal;
 }
 body form {
-  background-color: #f7dede;
+  background-color: #f1a9a9;
   /* Color de fondo del formulario, ajusta según tu diseño. */
   padding: 20px;
   /* Ajusta el relleno según sea necesario. */
@@ -127,17 +129,28 @@ body .contact_form h3 {
   /* Color amarillo similar al de Los Simpsons. */
   text-shadow: 2px 2px 4px #FF8C00;
   /* Sombra de texto para resaltar. */
-  font-size: 40px;
+  font-size: 30px;
+  text-align: center;
 }
 body .contact_form h4 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   /* Espacio entre el título y el formulario. */
+  margin: 20px;
 }
 body .formulario label {
   display: block;
   margin-bottom: 5px;
   color: #FFD700;
   /* Color amarillo para etiquetas de formulario. */
+}
+body .container h1 {
+  margin-bottom: 20px;
+}
+body .container h3 {
+  margin-bottom: 20px;
+}
+body .container p {
+  margin-bottom: 20px;
 }
 body .formulario input,
 body .formulario textarea {
@@ -151,6 +164,7 @@ body .formulario textarea {
   /* Borde del campo de entrada. */
   border-radius: 5px;
   /* Bordes redondeados para los campos de entrada. */
+  padding: 20px 0;
 }
 body .formulario textarea {
   resize: vertical;
@@ -175,6 +189,13 @@ body .aviso {
   /* Color amarillo para el aviso. */
   font-style: italic;
   margin-top: 10px;
+}
+body .list-inline {
+  margin: 0;
+  padding: 0;
+}
+body .list-inline-item {
+  margin-right: 10px;
 }
 
 /* Estilos para el contenedor padre del flex */
@@ -220,7 +241,7 @@ body .aviso {
   width: 100%;
   background-color: black;
   color: black;
-  padding: 30px;
+  padding: 20px 0;
 }
 .footer h5 {
   color: black;
@@ -325,6 +346,7 @@ h2 {
   /* Tamaño de la fuente para los subtítulos. Ajusta según sea necesario. */
   font-weight: bold;
   text-align: center;
+  word-wrap: break-word; /* Agregamos esta línea para el ajuste de palabras */
 }
 #noticias .container h3 {
   font-family: "Bangers", cursive;
